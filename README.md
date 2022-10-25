@@ -42,8 +42,8 @@ It returns the following properties:
 - **userProfile** [🤖](https://github.com/iWeltAG/nuxt-keycloak/blob/29af07180b7ac5de875ebcf8db58db8d667d078d/src/runtime/composables/use-keycloak.ts#L32) — Vue ref containing the user's profile information.
 - **userProfile** [🤖](https://github.com/iWeltAG/nuxt-keycloak/blob/29af07180b7ac5de875ebcf8db58db8d667d078d/src/runtime/composables/use-keycloak.ts#38) — Vue ref containing the OIDC user info object.
 - **userProfile** [🤖](https://github.com/iWeltAG/nuxt-keycloak/blob/29af07180b7ac5de875ebcf8db58db8d667d078d/src/runtime/composables/use-keycloak.ts#43) — Vue ref containing information about the user's authorization (the scopes they have access to).
-- **userProfile** *(Ref<string>)* — Vue ref containing the token that can be used to authenticate API requests on the user's behalf.
-- **updateToken** *(() ⇒ void)* — Call this to manually refresh the token.
+- **userProfile** *(`Ref<string>`)* — Vue ref containing the token that can be used to authenticate API requests on the user's behalf.
+- **updateToken** *(`() ⇒ void`)* — Call this to manually refresh the token.
 - **login** [🤖](https://github.com/iWeltAG/nuxt-keycloak/blob/29af07180b7ac5de875ebcf8db58db8d667d078d/src/runtime/composables/use-keycloak.ts#60) — Call this to start the login flow.
 - **logout** [🤖](https://github.com/iWeltAG/nuxt-keycloak/blob/29af07180b7ac5de875ebcf8db58db8d667d078d/src/runtime/composables/use-keycloak.ts#60) — Call this to start the logout flow.
 
