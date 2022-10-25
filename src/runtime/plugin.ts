@@ -29,7 +29,9 @@ export default defineNuxtPlugin((nuxtApp) => {
   }
 
   const keycloak = new Keycloak({
-    ...options
+    url: options.url,
+    realm: options.realm,
+    clientId: options.clientId
   })
   nuxtApp.vueApp.provide(ActiveKeycloakInstance, keycloak)
 
