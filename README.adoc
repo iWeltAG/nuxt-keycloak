@@ -1,0 +1,23 @@
+= Keycloak Nuxt Module
+
+This module exposes the `useKeycloak` composable which provides the following API:
+
+[source, typescript]
+----
+include::./src/runtime/composables/use-keycloak.ts[lines="21..66"]
+
+export interface UserAccess {
+  realm: { roles: string[]; }
+  resources: Record<string, { roles: string[]; }>
+}
+----
+
+== Module settings
+
+Use the `keycloak` key inside `defineNuxtConfig` to set options.
+The following settings are available:
+
+[source, typescript]
+----
+include::./src/module.ts[lines="5..30"]
+----
